@@ -35,6 +35,17 @@ Run the command:
 pip3 install -r requirements.txt
 ```
 
+## Docker Build
+```
+docker build -t <IMAGE NAME> .
+docker build -t xshuden/traxss .
+```
+
+## Docker Run
+```
+docker run --rm -it xshuden/traxss
+```
+
 ## Running Traxss
 
 Traxx can be started with the command:
@@ -49,7 +60,7 @@ This will launch an interactive CLI to guide you through the process.
 
 #### Full Scan w/ HTML
 
-Uses a query scan with 575+ payloads and attempts to find XSS vulnerabilities by passing parameters through the URL. It will also render the HTML and attempt to find manual XSS Vulnerablities (this feature is still in beta).
+Uses a query scan with 575+ payloads and attempts to find XSS vulnerabilities by passing parameters through the URL. It will also render the HTML and attempt to find manual XSS Vulnerabilities (this feature is still in beta).
 
 #### Full Scan w/o HTML
 
